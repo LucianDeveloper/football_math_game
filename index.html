@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Найди число</title>
+</head>
+<body>
+<div class="logo"><img class="logo__img" src="img/logo.jpg" alt=""></div>
+<h2>Найдите число <span id="quest">12</span></h2>
+    <button class="startgame visible" id="start_btn" onclick="startGame()">СТАРТ</button>
+<div class="game hidden" id="game">
+  <div id="countdown" class="countdown">
+    <div class="countdown-number">
+      <span id="minutes" class="minutes countdown-time">10</span>
+      <span class="countdown-text">Минуты</span>
+    </div>
+    <div class="countdown-number">
+      <span id="seconds" class="seconds countdown-time">12</span>
+      <span class="countdown-text">Секунды</span>
+    </div>
+  </div>
+
+
+
+  <div class="numblock">
+    <div class="numbers">
+      <div class="numbers__variant number_1">
+        <p class="numbers__variant__text" onclick="get_number()" id="1"></p>
+      </div>
+      <div class="numbers__variant number_2">
+        <p class="numbers__variant__text" onclick="get_number()" id="2"></p>
+      </div>
+      <div class="numbers__variant number_3">
+        <p class="numbers__variant__text" onclick="get_number()" id="3"></p>
+      </div>
+      <div class="numbers__variant number_4">
+        <p class="numbers__variant__text" onclick="get_number()" id="4"></p>
+      </div>
+      <div class="numbers__variant number_5">
+        <p class="numbers__variant__text" onclick="get_number()" id="5"></p>
+      </div>
+      <div class="numbers__variant number_6">
+        <p class="numbers__variant__text" onclick="get_number()" id="6"></p>
+      </div>
+      <div class="numbers__variant number_7">
+        <p class="numbers__variant__text" onclick="get_number()" id="7"></p>
+      </div>
+      <div class="numbers__variant number_8">
+        <p class="numbers__variant__text" onclick="get_number()" id="8"></p>
+      </div>
+      <div class="numbers__variant number_9">
+        <p class="numbers__variant__text" onclick="get_number()" id="9"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="message" class="message hidden" >
+  <div class="message__content">
+    <h2 id="timeIsUp" class="message hidden">Время вышло 🥺</h2>
+    <h2 id="True" class="message__true hidden">Верно 🤩</h2>
+    <h2 id="False" class="message__false hidden">Не Верно 😢</h2>
+    <button class="btn" onclick="reload()"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

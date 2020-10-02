@@ -1,0 +1,203 @@
+* {
+  color: #fff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: grid;
+  grid-template-rows: 1fr;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+    text-align: center;
+    background: #2627E5;
+    font-family: sans-serif;
+    font-weight: 100;
+  }
+
+.logo {
+  margin-top: 30px;
+}
+.logo__img {
+  width: 80px;
+  border-radius: 50%;
+}
+  .countdown-title {
+    margin-top: 30px;
+    color: #fff;
+    font-weight: 100;
+    font-size: 40px;
+    /* margin: 0 0 20px; */
+  }
+   
+  .countdown {
+    margin-top: 30px;
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+  }
+   
+  .countdown-number {
+    padding: 10px;
+    border-radius: 3px;
+    background: #ef941d;
+    display: inline-block;
+  }
+
+  .countdown-time {
+    padding: 15px;
+    border-radius: 3px;
+    background: #a7540e;
+    display: inline-block;
+  }
+
+  .countdown-text {
+    display: block;
+    padding-top: 5px;
+    font-size: 16px;
+  }
+
+  .message{
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    /* flex-direction: column;
+    justify-content: space-between; */
+    align-items: center;
+    font-size: 34px;
+    font-weight: 900;
+    width: 300px;
+    height: 450px;
+    margin: 0 auto;
+  }
+  .True, .False, .timeIsUp{
+    display: none;
+  }
+  .visible{
+    display: block;
+  }
+   
+  .hidden{
+    display: none;
+  }
+
+  h2 span {
+    color: red;
+    font-size: 28px;
+  }
+  .numblock {
+    display: grid;
+    margin: 0 auto;
+  }
+  .numbers {
+    display: grid;
+    justify-self: center;
+    grid-template-columns: 300px;
+    grid-gap: 10px;
+    position: relative;
+
+
+  }
+
+  .numbers__variant {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+    font-size: 24px;
+    border: none;
+    color: #2627E5;
+  }
+.numbers__variant p {
+  color: #2627E5;
+  font-weight: 900;
+}
+
+  .numbers__variant:hover {
+    background-color: aqua;
+    cursor: pointer;
+  }
+
+  .number_1 {
+  position: absolute;
+  transform: translate(30px,10px);
+}
+
+.number_2 {
+  position: absolute;
+  transform: translate(220px, 200px);
+}
+
+.number_3 {
+  position: absolute;
+  transform: translate(120px, 10px);
+}
+
+.number_4 {
+  position: absolute;
+  transform: translate(0px, 90px);
+}
+
+.number_5 {
+  position: absolute;
+  transform: translate(80px, 100px);
+}
+
+.number_6 {
+  position: absolute;
+  transform: translate(180px, 100px);
+}
+
+.number_7 {
+  position: absolute;
+  transform: translate(130px, 190px);
+}
+
+.number_8 {
+  position: absolute;
+  transform: translate(240px, 30px);
+}
+
+.number_9 {
+  position: absolute;
+  transform: translate(40px, 180px);
+}
+
+.message__true {
+  font-size: 34px;
+  font-weight: 900;
+}
+  .btn {
+    margin-top: 40px;
+    background-color: #a7540e;
+    border: none;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 44px;
+    cursor: pointer;
+  }
+
+  .startgame {
+    margin: 0 auto;
+    background-color: #a7540e;
+    border: none;
+    width: 160px;
+    height: 60px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: 40px;
+  }
